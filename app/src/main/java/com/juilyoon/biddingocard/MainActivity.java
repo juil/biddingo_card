@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         goToUrl("http://biddingo.com");
     }
 
+    // Credit: http://stackoverflow.com/a/5026626/745776
     public void goToUrl (String url) {
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
      * @param url
      *     The full URL to the Facebook page or profile.
      * @return An intent that will open the Facebook page/profile.
+     *
+     * Credit: http://stackoverflow.com/a/24547437/745776
      */
     public static Intent newFacebookIntent(PackageManager pm, String url){
         Uri uri = Uri.parse(url);
