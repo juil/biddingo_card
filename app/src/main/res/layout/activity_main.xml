@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.juilyoon.biddingocard.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/biddingo_logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="Biddingo.com" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:text="Online procurement platform connecting public and private organizations with suppliers of all sizes." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/phone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="(416) 756-0955" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/location"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="1210 Sheppard Ave, East, Suite 305 \nToronto, Ontario \nM2K 1E3 \nCanada" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/fb_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:elevation="5dp"
+            android:layout_margin="16dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/border_image"
+            android:src="@drawable/facebook"
+            android:clickable="true"
+            android:autoLink="web"
+            android:cursorVisible="true"
+            android:onClick="goToFb"/>
+        <ImageButton
+            android:id="@+id/twitter_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:elevation="5dp"
+            android:layout_margin="16dp"
+            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/border_image"
+            android:src="@drawable/twitter"
+            android:clickable="true"
+            android:autoLink="web"
+            android:cursorVisible="true"
+            android:onClick="goToTwitter" />
+        <ImageButton
+            android:id="@+id/web_button"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:elevation="5dp"
+            android:layout_margin="16dp"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/border_image"
+            android:src="@drawable/website"
+            android:clickable="true"
+            android:autoLink="web"
+            android:cursorVisible="true"
+            android:onClick="goToCom" />
+    </LinearLayout>
+</RelativeLayout>
